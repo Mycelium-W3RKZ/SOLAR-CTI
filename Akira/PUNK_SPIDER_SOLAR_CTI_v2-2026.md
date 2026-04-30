@@ -63,7 +63,7 @@ Leverages libraries like:
 
 - Complex exception handling
 - Sophisticated error management
-- "\_\_acrt_call_reportfault()" & "FUN_14008d62c()" contain the "IsDebuggerPresent()" stored in "BVar1" & "BVar2" respectivley
+- "__acrt_call_reportfault()" & "FUN_14008d62c()" contain the "IsDebuggerPresent()" stored in "BVar1" & "BVar2" respectivley
 -- If passed: FUN_14008c930 is invoked (Net foray will focus on akira's internals)
         
 #### Dynamic Analysis Observations

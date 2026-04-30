@@ -1,0 +1,47 @@
+[Imports]
+KERNEL32.dll
+    AcquireSRWLockExclusive
+    AreFileApisANSI
+    CancelIoEx
+    CloseHandle
+    CompareStringEx
+    CompareStringW
+    CreateDirectoryW
+    CreateEventW
+    CreateFileW
+    CreateIoCompletionPort
+
+SHELL32.dll
+    CommandLineToArgvW
+
+ole32.dll
+    CoCreateInstance
+    CoInitializeEx
+    CoSetProxyBlanket
+    CoUninitialize
+
+OLEAUT32.dll
+    SysAllocString
+    SysFreeString
+    VariantClear
+    VariantInit
+
+WS2_32.dll
+    WSACleanup
+    WSAStartup
+SHLWAPI.dll
+    PathIsNetworkPathW
+
+MPR.dll
+    WNetGetConnectionW
+
+WTSAPI32.dll
+    WTSEnumerateProcessesW
+    WTSFreeMemory
+
+RstrtMgr.DLL
+    RmEndSession
+    RmGetList
+    RmRegisterResources
+    RmShutdown
+    RmStartSession
