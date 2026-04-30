@@ -398,6 +398,9 @@ That's where the spider seems to digitally dwell and that's where this hunt bega
 7. https://www.hybrid-analysis.com/sample/aaa7799edfd86b52438a9e0d71f8069cbcbe1988036b95888fcdc553e729b7b9/672a0eb7482e9dcfd20466c7 
 
 *Disclaimer: Researched with caffeine, curiosity, and a slightly twisted sense of humor. Hire me before .....Well you know. 😎*
+
 *"Runner's Logs" are inspired by Mike Pondsmith's "Cyberpunk" universe.*
+
 [To watch our Cyberpunk Red Actual Play Podcast Live](https://www.twitch.tv/solarpoweredbard) 
+
 [To Catch up on Season 1!! ;3](https://www.youtube.com/watch?v=mVFLeDbrOOE&list=PLLe7uI4ugKtmFVIdIaOpyzi6J_N_StfNJ&pp=gAQB)
