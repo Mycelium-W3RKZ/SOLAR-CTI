@@ -305,8 +305,8 @@ The ransom note reveals a chillingly professional approach:
 
 #### Threat Actor Profile: PUNK SPIDER
 
-**Aka**: GOLDEN SAHARA
-**Specialty**: Precision Ransomware Deployment
+**Aka**: GOLDEN SAHARA | 
+**Specialty**: Precision Ransomware Deployment | 
 **Threat Level**: High ⚠️
 ![November 2024 Akira Sample FSR](https://github.com/Mycelium-W3RKZ/SOLAR-CTI/blob/main/Akira/Screenshots/312809618-727de75a64def77120aad19eca1cce8f526d814a1e7c5bad67feac139528a2c1.png)
 
