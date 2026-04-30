@@ -308,7 +308,7 @@ The ransom note reveals a chillingly professional approach:
 **Aka**: GOLDEN SAHARA
 **Specialty**: Precision Ransomware Deployment
 **Threat Level**: High ⚠️
-![November 2024 Akira Sample FSR](https://github.com/Mycelium-W3RKZ/SOLAR-CTI/blob/main/Akira/Screenshots/3469437055-c331d9461e6584f294132e132e066cc3d415ae29087b765bcaa411b8f01ec74c.png)
+![November 2024 Akira Sample FSR](https://github.com/Mycelium-W3RKZ/SOLAR-CTI/blob/main/Akira/Screenshots/312809618-727de75a64def77120aad19eca1cce8f526d814a1e7c5bad67feac139528a2c1.png)
 
 "They're not just hackers; they're digital entrepreneurs with a particularly aggressive business model."
 
