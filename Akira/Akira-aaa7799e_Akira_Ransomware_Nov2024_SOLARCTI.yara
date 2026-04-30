@@ -7,7 +7,7 @@ rule Akira_Ransomware_Nov2024_SOLARCTI {
         hash_sha256     = "aaa7799edfd86b52438a9e0d71f8069cbcbe1988036b95888fcdc553e729b7b9"
         hash_md5        = "feb81a8d7e0f91d6f74b440cdd3c2f28"
         imphash         = "9b9e1545a27f74c7e825990e6d713212"
-        reference       = "https://github.com/Mycelium-W3RKZ/SOLAR-CTI/Akira/"
+        reference       = "https://github.com/Mycelium-W3RKZ/SOLAR-CTI/tree/main/Akira"
         publish0x       = "https://www.publish0x.com/solar-cti/akira-ransomware-threat-intelligence-report-nov2024-xnkdxkr"
         mitre_group     = "G1024"
         threat_actor    = "PUNK SPIDER"

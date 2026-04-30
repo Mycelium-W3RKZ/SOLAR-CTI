@@ -9,7 +9,7 @@ description: |
 author: JAWz_TheSolarPoweredBard / SOLAR-CTI
 date: 2024-11-30
 references:
-    - https://github.com/Mycelium-W3RKZ/SOLAR-CTI/Akira/
+    - https://github.com/Mycelium-W3RKZ/SOLAR-CTI/tree/main/Akira
     - https://attack.mitre.org/groups/G1024/
 tags:
     - attack.impact
