@@ -38,19 +38,14 @@
 I'm **Joshua Alexander Wright** — independent security researcher, malware analyst,
 and CTI author operating under the handle **JAWz_TheSolarPoweredBard**.
 
-This repository is my public threat intelligence lab. Every report here is
-the output of a real analysis session: Ghidra open, three sandboxes running in parallel,
-Wireshark against the PCAP, and a research notes doc filling line by line.
-
-No sandbox-copy-paste. No vendor-report reformats.
-Just the mycelium traced to the root.
+This repository is my public threat intelligence lab. Every report here is the output of a real analysis session: Ghidra open, three sandboxes running in parallel, Wireshark against the PCAP, and a research notes doc filling line by line. Straight mycelium traced to it's root.
 
 ---
 
 ## 🌐 THE SOLAR-CTI MISSION
 
 ```
-WHO IS ATTACKING?      ──► Adversary profiles. PUNK SPIDER. Named actors. Unknown clusters.
+WHO IS ATTACKING?      ──► Adversary profiles. Named actors. Unknown clusters.
 WHAT DO THEY WANT?     ──► Operational context. Motives. Targeting logic. Campaign scope.
 HOW DO THEY OPERATE?   ──► TTPs. ATT&CK-mapped. Evidence-anchored. Per technique.
 WHAT DO WE LOOK FOR?   ──► IOCs. YARA rules. Sigma detections. Actionable and deployable.
@@ -95,13 +90,13 @@ Intel classifications produced per report:
 ╠══════════╬═══════════════════════════════════════════════════════════════╣
 ║ INTEL    ║  VirusTotal · ThreatFox · AbuseIPDB · Shodan · URLScan       ║
 ╠══════════╬═══════════════════════════════════════════════════════════════╣
-║ STATIC   ║  Ghidra · FLOSS · PEStudio · PEview · PEBear · malapi.io    ║
+║ STATIC   ║  Ghidra · FLOSS · PEStudio · PEview · PEBear · malapi.io     ║
 ╠══════════╬═══════════════════════════════════════════════════════════════╣
 ║ NETWORK  ║  Wireshark (PCAP analysis — downloaded from sandboxes)       ║
 ╠══════════╬═══════════════════════════════════════════════════════════════╣
 ║ DETECT   ║  YARA (binary) · Sigma (behavioral) · vSOCiety               ║
 ╠══════════╬═══════════════════════════════════════════════════════════════╣
-║ PUBLISH  ║  GitHub · Substack · Publish0x · Carrd                       ║
+║ PUBLISH  ║  GitHub                                                      ║
 ╚══════════╩═══════════════════════════════════════════════════════════════╝
 ```
 
@@ -120,15 +115,7 @@ PHASE 7  Delivery       ──  Publish. Distribute. Backlink. Detect.
 
 ---
 
-## 📦 WHAT'S IN EACH REPORT FOLDER
-
-```
-/[Family]/
-├── README.md          ← The full CTI report
-├── [family].yar       ← YARA detection rule — tested against analyzed sample
-├── [family].yml       ← Sigma detection rule
-└── iocs.csv           ← Structured IOC export for tooling import
-```
+## 📦 THE DELIVERABLES
 
 **Every report delivers:**
 
@@ -148,19 +135,13 @@ PHASE 7  Delivery       ──  Publish. Distribute. Backlink. Detect.
 
 ## 🎮 THE RUNNER'S LOG
 
-Every report closes with a Runner's Log — a threat intelligence narrative
-told through the lens of **Mike Pondsmith's Cyberpunk Red** universe.
+Every report closes with a Runner's Log, a threat intelligence narrative told through the lens of a "Netrunner" in **Mike Pondsmith's Cyberpunk Red** universe.
 
-The NET is the forest. The adversary is something that grows in the dark.
-The Mycelial Hunter traces every thread of digital mycelium back to the
-fruiting body and documents what it finds before the forest moves on.
+The NET is the a "[dark forest](https://en.wikipedia.org/wiki/Dark_forest_hypothesis#Game_theory)". The adversary is simply another denizen. Their code, influence. The "Mycelial Hunter", a character developed to frame  **operational context** - adversary empathy, campaign framing, & the human intelligence and intrigue that makes technical data actionable and memorable.
 
-This is not flavor text. It is **operational context** — adversary empathy,
-campaign framing, and the human intelligence that makes technical data
-actionable by the humans who defend against it.
+"To Hunt is to proactively trace every thread of not-yet verified digital mycelium back to it's fruiting body - documenting what I find before the forest moves on."
 
-> *"They're not just hackers; they're digital entrepreneurs with a particularly
-> aggressive business model."*
+> *"They're not just hackers; they're digital entrepreneurs with a particularly aggressive business model."*
 > — Mycelial Hunter's Runner's Log, Akira Report, Nov 2024
 
 ---
@@ -188,26 +169,20 @@ MISP, or custom hunting queries.
 
 ```
 Handle:     JAWz_TheSolarPoweredBard
-Entity:     M.C. LLC
+Entity:     [WIP]
 Credential: HTB Certified Penetration Testing Specialist (CPTS)
-            Cyber Threat Hunting — Coursera
-Training:   ROPemporium · Ethernaut · Microcorruption · HackTheBox
-CTF:        NahamCon 2022 — Top 10% solo · HTB Cyber Apocalypse 2021 — Top 3% solo
-Research:   Basecamp Desktop CVSS 8.4 (HackerOne — disclosed) · SOLAR-CTI
+            Cyber Threat Hunting - Coursera 
+            (Years of Curious Self Study)
+Training:   ROPemporium · Ethernaut · Microcorruption · HackTheBox · (Any resource I can get my mitts on)
+CTF:        NahamCon 2022 — Top 10% solo · HTB Cyber Apocalypse 2021 — Top 3%
+Research:   [Offensive Writeups] · SOLAR-CTI
 Stack:      JavaScript/Node · Ruby · Kotlin Native · x86/x64 ASM
-Languages:  English (native) · Korean (professional) · Spanish (conversational)
+Languages:  English (native) · Korean (conversational) · Spanish (conversational) · Japanese (conversational) · Dutch (Beginner) · Russian (Beginner) · Chinese (Beginner) · Arabic (Written Translation Experience) · Latin (Foundational Study) · Czech (Interested) · Portuguese (Interested)· (And a few more polyglotisms i've forgotten or buried for emergency-use)
 ```
 
-**Background:** I work at the intersection of offensive security and threat intelligence.
-CPTS-certified with hands-on binary exploitation experience (ROPemporium, Microcorruption,
-Nightmare), active Electron and native desktop vulnerability research (Basecamp CVSS 8.4),
-and a published CTI practice spanning ransomware, infostealers, RATs, and advanced
-persistent threat actor profiling.
+**Background:** I work at the intersection of offensive security, security engineering, surveillance, and threat intelligence. CPTS-certified with hands-on binary exploitation experience (ROPemporium, Microcorruption, Nightmare,), active Electron and native desktop vulnerability research, and a published CTI practice spanning ransomware, infostealers, RATs, and advanced persistent threat actor profiling.
 
-The combination of attacker-side methodology and defender-side intelligence production
-is deliberate. Understanding how threat actors think — their evasion logic, their
-operational constraints, their negotiation psychology — makes the intelligence
-more useful to the people defending against them.
+The combination of attacker-side methodology and defender-side intelligence production is deliberate. Understanding how threat actors think, their evasion logic, their operational constraints, their negotiation psychology, makes the intelligence more useful to the people defending against them.
 
 ---
 
@@ -217,8 +192,7 @@ more useful to the people defending against them.
 
 | Platform | Link |
 |---|---|
-| 🍄 **SOLAR-CTI Blog** | [publish0x.com/solar-cti](https://www.publish0x.com/solar-cti) |
-| 🔐 **HackerOne** | [hackerone.com/jawzthesolarpoweredbard](https://hackerone.com) |
+| 🍄 **SOLAR-CTI Blog** | [HERE FOR NOW](.) |
 | 💼 **LinkedIn** | [linkedin.com/in/joshua-wright-118900290](https://linkedin.com/in/joshua-wright-118900290) |
 | 📬 **Research Contact** | solarpoweredbard@wearehackerone.com |
 
@@ -231,10 +205,10 @@ more useful to the people defending against them.
 ```
 🍄  The mycelium connects everything.
      Follow the threads.
-          Stay patched. 🍄
+          Stay patched Peepz. 🍄
 ```
 
-*SOLAR-CTI · JAWz_TheSolarPoweredBard · M.C. LLC*
+*SOLAR-CTI · JAWz_TheSolarPoweredBard*
 *TLP:WHITE — All reports freely shareable*
 
 </div>
