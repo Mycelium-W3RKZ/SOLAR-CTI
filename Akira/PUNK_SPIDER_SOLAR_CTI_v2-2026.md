@@ -362,26 +362,26 @@ In the dark forest of the NET, PUNK SPIDER weaves its web like a digital arachni
 
 Most ransomware crews are blunt instruments. They kick in the door, spray the room, & demand the funds. PUNK SPIDER is patient. Methodical. The first thing that told me I was dealing with something different wasn't the encryption ... it was the eviction notice.
 
-Observation 01 // Restart Manager Weaponization: 
+```Observation 01 // Restart Manager Weaponization: 
 Before a single file gets locked, PUNK SPIDER calls RstrtMgr.DLL — the Windows Restart Manager API. This is legitimate OS infrastructure, built to help software installers gracefully close applications holding file handles open. PUNK SPIDER turns it into a systematic process eviction engine: every guardian standing over a target file gets walked out the door first. The spider doesn't fight the lock. It dissolves it. I suspect that this is not opportunism, but a developer who understood the OS well enough to borrow its own tools against it. 
-
+```
 Once the files are bare — no process holding a handle, no application watching — the encryption runs clean. No collisions. No partial writes. No evidence of a struggle. By the time the victim notices, the web is complete.
 
 Then I followed the silk thread outward, toward the negotiation layer of this woven woe. Worrying the waters futher is that I found no standard crude payment wallet and a threatening note pairing... I found infrastructure and fear-mongery.
 
-Observation 02 // Two-Site TOR Architecture:
+```Observation 02 // Two-Site TOR Architecture:
 PUNK SPIDER operates two distinct TOR-hosted properties. Site one is the negotiation room - access-controlled per victim via a unique code baked into the ransom note (9683-QE-ETXZ-GHWN in this sample). Site two is the leak blog - the credible threat of public data exposure, held in reserve. This is no script kiddie's PayPal link, but a purpose-built customer service portal for extortion. Separate domains for Separate operational functions, and role separation for an enterpirse of felonies. These people obviously read the same operational security manuals the defenders do. 
-
+```
 Every analyst who's hunted malware knows the next step after mapping the payload behavior is instrumenting the binary. So I slap hooks on the interesting functions and watch the call flow. PUNK SPIDER anticipated this. What they did about it is the part that earned my respect and my slight irritation.
 
-Observation 03 // Anti-Debug at Two Vectors:
+```Observation 03 // Anti-Debug at Two Vectors:
 The first anti-debug check lives at FUN_14008d62c() ... the contexually obvious location, the one a first-pass analyst instruments. PUNK SPIDER then hid a second check inside \_\_acrt_call_reportfault. That's a C runtime fault handler - the function that fires when the application encounters an internal error. The developers expected analysts to instrument the main execution flow. They weren't wrong. But the second check sits inside the error reporting infrastructure, where most hunters don't think to look. This is adversarial thinking applied to analysis workflow — they modeled the researcher and built against the model. 
-
+```
 By the time I reached the ransom note, I had already developed a profile of a crew that studies systems, studies humans, and studies the people who hunt them an I believe this note confirmed that for me.
 
-Observation 04 // Negotiation Psychology in the Payload Voice:
+```Observation 04 // Negotiation Psychology in the Payload Voice:
 The note opens: "Hi friends." It closes with something close to: "let's keep all the tears and resentment to ourselves." This is not an accident of tone. This is deliberate sarcastic de-escalation — calibrated to tax the emotional readiness of the victim's first contact moment, because a panicked victim calls law enforcement or burns the negotiation in rage. A calm but afraid victim opens a TOR browser and enters the access code. PUNK SPIDER didn't just hire coders. Somewhere in this crew, someone studied negotiation compliance. The payload is the technical end. The note is the social engineering layer.
-
+```
 That's the signature of a mature operation. The encryption is commodity and the Restart Manager trick is clever. The two-site infrastructure is modern, professional, and reeks of corpo. But the moment you see a ransomware crew that thought hard about the emotional state of their victim at the moment of discovery on top of the technical ingennuity and you're looking at something that scales and compounds.
 
 The mycelium doesn't announce itself. It just grows, silent, beneath the surface, until everything above it is already assimilated to it's networking paradigm. PUNK SPIDER hijacks this flow and grows the same way. The hunters who catch it are the ones who stop looking at the encryption and start asking: "what","why", and "how" did it do before the first file was touched?
