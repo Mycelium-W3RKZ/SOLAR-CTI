@@ -1,7 +1,7 @@
 title: Akira Ransomware — Restart Manager Unlock Sequence
 id: f3a8e291-4c7a-4b2d-9f1e-7d6c5a3b2e10
 status: experimental
-description: |
+description:
     Detects the Restart Manager API sequence used by Akira ransomware
     to unlock files held by processes before encryption.
     Derived from SOLAR-CTI analysis of SHA256:aaa7799e...
