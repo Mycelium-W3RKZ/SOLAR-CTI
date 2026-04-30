@@ -158,11 +158,6 @@ yara [family].yar /path/to/scan/
 **To use the Sigma rules:**
 Import `.yml` files into your SIEM, EDR, or detection pipeline.
 Sigma rules can be converted to any platform format via [sigmac](https://github.com/SigmaHQ/sigma).
-
-**To import IOCs:**
-`iocs.csv` is structured for direct import into threat intelligence platforms,
-MISP, or custom hunting queries.
-
 ---
 
 ## 🔬 OPERATOR PROFILE
