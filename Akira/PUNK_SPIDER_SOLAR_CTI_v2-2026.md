@@ -1,5 +1,5 @@
 # SOLAR_CTI: PUNK SPIDER's "Akira" Ransomware — November 2024
-### By JAWz_TheSolarPoweredBard | SOLAR-CTI | 30 Nov 2024 (v2 retrofit: 2026-04-XX)
+### By JAWz_TheSolarPoweredBard | SOLAR-CTI | 30 Nov 2024 (v2 retrofit: 2026-04-30)
 ### Voiced by: The Mycelial Hunter 🕵️‍♂️🍄
 
 ## Executive Summary
