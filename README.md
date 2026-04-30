@@ -66,7 +66,7 @@ Intel classifications produced per report:
 
 | # | Family | Classification | Date | T-codes | YARA | Sigma | IOCs |
 |---|---|---|---|---|---|---|---|
-| [R0]([./Akira/](https://github.com/Mycelium-W3RKZ/SOLAR-CTI/blob/main/Akira/PUNK_SPIDER_SOLAR_CTI_v2-2026.md)) | **Akira Ransomware** | Double Extortion / PUNK SPIDER (G1024) | Nov 2024 | 18 | ✅ | ✅ | ✅ |
+[| R0| **Akira Ransomware** | Double Extortion / PUNK SPIDER (G1024) | Nov 2024 | 18 | ✅ | ✅ | ✅ |](https://github.com/Mycelium-W3RKZ/SOLAR-CTI/blob/main/Akira/PUNK_SPIDER_SOLAR_CTI_v2-2026.md) 
 | R1 | *Coming soon — Infostealer* | — | — | — | — | — | — |
 | R2 | *Coming soon — RAT* | — | — | — | — | — | — |
 | R3 | *Coming soon — Loader* | — | — | — | — | — | — |
