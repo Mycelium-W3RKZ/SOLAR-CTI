@@ -1,0 +1,35 @@
+title: Akira Ransomware — Restart Manager Unlock Sequence
+id: f3a8e291-4c7a-4b2d-9f1e-7d6c5a3b2e10
+status: experimental
+description: |
+    Detects the Restart Manager API sequence used by Akira ransomware
+    to unlock files held by processes before encryption.
+    Derived from SOLAR-CTI analysis of SHA256:aaa7799e...
+    PUNK SPIDER / G1024 confirmed TTP.
+author: JAWz_TheSolarPoweredBard / SOLAR-CTI
+date: 2024-11-30
+references:
+    - https://github.com/Mycelium-W3RKZ/SOLAR-CTI/Akira/
+    - https://attack.mitre.org/groups/G1024/
+tags:
+    - attack.impact
+    - attack.t1490
+    - attack.t1486
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_rstrtmgr:
+        # Process loading RstrtMgr.DLL — uncommon outside legitimate Windows tools
+        ImageLoaded|endswith: '\RstrtMgr.dll'
+    selection_ransom_note:
+        # Ransom note creation in any directory
+        TargetFilename|endswith: 'akira_readme.txt'
+    selection_extension:
+        # Encrypted file extension
+        TargetFilename|endswith: '.akira'
+    condition: 1 of selection_*
+falsepositives:
+    - Windows Restart Manager used by legitimate installers (verify parent process)
+    - File operations in security research environments
+level: high
